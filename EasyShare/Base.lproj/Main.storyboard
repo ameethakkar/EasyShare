@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EasyShare" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mansion" translatesAutoresizingMaskIntoConstraints="NO" id="IAM-DQ-Wgb">
+                                <rect key="frame" x="16" y="82" width="343" height="224"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="224" id="1t1-og-EdY"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="WRN-Jn-Tmf">
+                                <rect key="frame" x="16" y="315" width="343" height="128"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="oPQ-aD-Wzw"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EyT-d9-MRs">
+                                <rect key="frame" x="45" y="478" width="120" height="34"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="18"/>
+                                <state key="normal" title="Facebook">
+                                    <color key="titleColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="facebookClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FpL-D0-DfG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eo3-he-JZr">
+                                <rect key="frame" x="210" y="478" width="120" height="34"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="18"/>
+                                <state key="normal" title="Twitter">
+                                    <color key="titleColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="twitterClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="me1-1K-EUP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wqj-pb-M1D">
+                                <rect key="frame" x="45" y="534" width="120" height="34"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="18"/>
+                                <state key="normal" title="Email">
+                                    <color key="titleColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="emailClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zkI-YZ-TkP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xKH-JU-Mb8">
+                                <rect key="frame" x="210" y="534" width="120" height="34"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="18"/>
+                                <state key="normal" title="SMS">
+                                    <color key="titleColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="smsClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tfU-JY-NDl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V5I-cI-GFm">
+                                <rect key="frame" x="45" y="586" width="285" height="34"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="18"/>
+                                <state key="normal" title="Other Options">
+                                    <color key="titleColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="othersClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BLK-UP-2m4"/>
+                                </connections>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r1R-Fz-IA6">
+                                <rect key="frame" x="0.0" y="29" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="Rpe-cO-zr2">
+                                        <barButtonItem key="rightBarButtonItem" title="Share" id="URb-Oz-a8x">
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="V5I-cI-GFm" firstAttribute="height" secondItem="EyT-d9-MRs" secondAttribute="height" id="3qY-Ci-nS6"/>
+                            <constraint firstItem="V5I-cI-GFm" firstAttribute="top" secondItem="Wqj-pb-M1D" secondAttribute="bottom" constant="18" id="74m-GJ-DLx"/>
+                            <constraint firstItem="xKH-JU-Mb8" firstAttribute="width" secondItem="EyT-d9-MRs" secondAttribute="width" id="9Z5-Fe-5MP"/>
+                            <constraint firstItem="xKH-JU-Mb8" firstAttribute="height" secondItem="EyT-d9-MRs" secondAttribute="height" id="Cfr-c8-2Ak"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WRN-Jn-Tmf" secondAttribute="trailing" constant="16" id="FZ6-tm-S3H"/>
+                            <constraint firstItem="Wqj-pb-M1D" firstAttribute="top" secondItem="EyT-d9-MRs" secondAttribute="bottom" constant="22" id="GRq-Uz-nid"/>
+                            <constraint firstItem="IAM-DQ-Wgb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="62" id="GfL-3M-mFv"/>
+                            <constraint firstItem="Wqj-pb-M1D" firstAttribute="width" secondItem="EyT-d9-MRs" secondAttribute="width" id="IqW-lQ-J2k"/>
+                            <constraint firstItem="V5I-cI-GFm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="MMx-Qg-DEq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="V5I-cI-GFm" secondAttribute="trailing" constant="45" id="P50-3f-Mdk"/>
+                            <constraint firstItem="EyT-d9-MRs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="PPN-nu-BIJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="V5I-cI-GFm" secondAttribute="bottom" constant="47" id="SS8-wg-BXv"/>
+                            <constraint firstItem="WRN-Jn-Tmf" firstAttribute="top" secondItem="IAM-DQ-Wgb" secondAttribute="bottom" constant="9" id="aC0-o9-dxR"/>
+                            <constraint firstItem="eo3-he-JZr" firstAttribute="width" secondItem="EyT-d9-MRs" secondAttribute="width" id="awl-nU-G0K"/>
+                            <constraint firstItem="eo3-he-JZr" firstAttribute="height" secondItem="EyT-d9-MRs" secondAttribute="height" id="cFy-KU-Na7"/>
+                            <constraint firstItem="Wqj-pb-M1D" firstAttribute="baseline" secondItem="xKH-JU-Mb8" secondAttribute="baseline" id="dWB-QM-gYS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xKH-JU-Mb8" secondAttribute="trailing" constant="45" id="fAG-rO-TIE"/>
+                            <constraint firstItem="WRN-Jn-Tmf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="gYR-8h-MVv"/>
+                            <constraint firstItem="EyT-d9-MRs" firstAttribute="top" secondItem="WRN-Jn-Tmf" secondAttribute="bottom" constant="35" id="i5O-2D-Llz"/>
+                            <constraint firstItem="IAM-DQ-Wgb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ilc-fg-y0G"/>
+                            <constraint firstItem="Wqj-pb-M1D" firstAttribute="height" secondItem="EyT-d9-MRs" secondAttribute="height" id="nkf-Go-mlE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IAM-DQ-Wgb" secondAttribute="trailing" constant="16" id="pFi-0F-Xck"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eo3-he-JZr" secondAttribute="trailing" constant="45" id="qhB-Wy-xRH"/>
+                            <constraint firstItem="EyT-d9-MRs" firstAttribute="baseline" secondItem="eo3-he-JZr" secondAttribute="baseline" id="udH-Sw-rlz"/>
+                            <constraint firstItem="eo3-he-JZr" firstAttribute="leading" secondItem="EyT-d9-MRs" secondAttribute="trailing" constant="45" id="ycN-B1-9Ub"/>
+                            <constraint firstItem="Wqj-pb-M1D" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="yo9-NP-KU2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="ImgView" destination="IAM-DQ-Wgb" id="YA7-eb-rZO"/>
+                        <outlet property="shareBtn" destination="URb-Oz-a8x" id="e7F-3g-Ldc"/>
+                        <outlet property="textView" destination="WRN-Jn-Tmf" id="j3h-RD-XLR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Mansion" width="1280" height="720"/>
+    </resources>
+</document>
